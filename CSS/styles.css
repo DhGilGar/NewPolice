@@ -564,20 +564,17 @@ main {
   .phone-nav .phone-number:hover {
     color: #30D5C8;
   }
-.carousel-wrapper {
-  width: 150%;
-}
-
-.carousel-arrow {
-  transform: translateY(-70%);
-}
 
 
   }
 
 @media (max-width: 991.98px){
 
-
+.video-overlay-text {
+  position: absolute;
+  top: 25%;
+  width: 45%;
+}
 .section1 {
     background-color: rgb(255, 255, 255);
     margin-top: -4px;
@@ -726,7 +723,11 @@ main {
 
 
 
-
+.carousel-wrapper {
+  width: 150%;
+  padding-left: 5px; 
+  margin-top: -10vh;
+}
 
 
 .button-container {
