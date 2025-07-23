@@ -237,7 +237,7 @@ a:hover {
 
 
 #section-AboutUS {
-  padding: 5vh 10vw; 
+  padding: 5vh 5vw; 
   text-align: center; 
 }
 
@@ -252,7 +252,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 150px;
+  padding-top: 30px;
 }
 
 #section-AboutUS img.Police-Controller {
@@ -318,11 +318,21 @@ a:hover {
 }
 #section-Versiones {
   height: auto;
-  background-color: #fff;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
+
+
+#versiones {
+  background-color: #fff;
+  padding-top: 120px;
+  margin-top: -150px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 100px;
+}
+
 
 #section-Versiones .container {
 margin-top: 160px;
@@ -333,8 +343,9 @@ margin-top: 160px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
   width: 100%;
-  margin-top: -80px;
+  margin-top: -180px;
   padding-top: 10px;
+  
 }
 #section-Contacto {
   padding-bottom: 5vh ;
@@ -346,12 +357,12 @@ margin-top: 160px;
   border-bottom-left-radius: 20px;
 }
 
-  .circle-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: -160px auto;
-  }
+ .circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto 0 auto; /* top: 20px, horizontal: auto, bottom: 0 */
+}
 
   .circle {
     width: 100%;
@@ -478,12 +489,12 @@ margin-top: 160px;
 
 .custom-section .row {
   margin: 0 auto;
-  gap: 10px; /* Espacio entre columnas */
+  gap: 10px; 
 }
 
 .custom-section .col-12,
 .custom-section .col-md-5 {
-  margin: 2px; /* Margen exterior de cada cuadro */
+  margin: 2px;
 }
 
 .custom-section .card {
@@ -492,7 +503,6 @@ margin-top: 160px;
   border: none;
   border-radius: 5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-  height: 350px ;
 }
 
 .custom-section .card-body {
@@ -517,10 +527,11 @@ margin-top: 160px;
   font-size: 1rem;
 }
 
-.custom-section .card-img-bottom {
-  margin-top: 10px;
-  height: 150px;
-  object-fit: cover;
+.card-img-bottom {
+  max-height: 120px; /* ajusta este valor según lo que quieras */
+  width: auto;       /* que mantenga la proporción */
+  object-fit: contain; /* para que no se distorsione */
+  margin-top: 5px;   /* espacio arriba si quieres */
 }
 
 
@@ -586,31 +597,40 @@ margin-top: 160px;
   margin-top: -40vh;
 }
   #pcss-title {
-  font-weight: bold;
-  background: linear-gradient(90deg, #30D5C8, #009DE0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-size: 150px !important;
-  margin: 0 auto;
-}
+  
+  font-size: 130px !important;
 
+}
+#section-PCSS {
+  margin-top: -220px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+;
+  
+}
 .custom-section .card-body {
   margin-bottom: 2px;
 }
 
 #section-Versiones {
   height: auto;
-  background-color: #fff;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+
+#versiones {
+  background-color: #fff;
+  padding-top: 120px;
+  margin-top: -150px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 100px;
 }
   .circle-container {
-    position: relative;
     width: 250px;
     height: 250px;
-    margin: -160px auto;
   }
 
  
@@ -632,9 +652,9 @@ margin-top: 160px;
 }
 
 @media (min-width: 992px) {
-.custom-section .card {
-  height: 300px ;
-}
+
+
+
   .section4,
   .section5 {
     display: none;
@@ -673,7 +693,7 @@ margin-top: 160px;
 
 @media (max-width: 991.98px){
 
-
+ 
 .video-overlay-text {
   position: absolute;
   top: 25%;
@@ -838,13 +858,21 @@ margin-top: 160px;
 
 @media (max-width: 1200px) {
  
-.custom-section .card {
-  height: 600px ;
-}
 
 }
 @media (max-width: 768px) {
- 
+  #pcss-title {
+  font-size: 90px !important;
+}
+    .sin-borde-movil {
+    border-left: none !important;
+  }
+   .linea-horizontal {
+    visibility: hidden; 
+    height: 0;          /* elimina la altura */
+    margin: 0;          /* elimina margen */
+    padding: 0;         /* elimina padding si tuviera */
+  }
     .video-overlay-text {
     left: 50%;
     transform: translateX(-50%);
@@ -853,10 +881,6 @@ margin-top: 160px;
     padding-left: 0;
   }
  
- {
-  height: 300px ;
-}
-
 
 
 #section-AboutUS {
@@ -871,11 +895,4 @@ margin-top: 160px;
   border-top-right-radius: 40px;
 }
 
-}
-@media (max-width: 400px) {
-.custom-section .card {
-  height: 400px ;
-  margin-top: 80px;
-
-}
 }
