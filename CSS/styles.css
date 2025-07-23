@@ -621,12 +621,7 @@ margin-top: 160px;
 
 
 #versiones {
-  background-color: #fff;
-  padding-top: 120px;
-  margin-top: -100px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 100px;
+  margin-top: -150px;
 }
   .circle-container {
     width: 250px;
@@ -863,6 +858,10 @@ margin-top: 160px;
 @media (max-width: 768px) {
   #pcss-title {
   font-size: 90px !important;
+}
+
+#versiones {
+  margin-top: -100px;
 }
     .sin-borde-movil {
     border-left: none !important;
