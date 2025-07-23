@@ -615,7 +615,7 @@ margin-top: 160px;
 #section-Versiones {
   height: auto;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 120px;
 }
 
@@ -623,7 +623,7 @@ margin-top: 160px;
 #versiones {
   background-color: #fff;
   padding-top: 120px;
-  margin-top: -150px;
+  margin-top: -100px;
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 100px;
@@ -867,12 +867,7 @@ margin-top: 160px;
     .sin-borde-movil {
     border-left: none !important;
   }
-   .linea-horizontal {
-    visibility: hidden; 
-    height: 0;          /* elimina la altura */
-    margin: 0;          /* elimina margen */
-    padding: 0;         /* elimina padding si tuviera */
-  }
+
     .video-overlay-text {
     left: 50%;
     transform: translateX(-50%);
@@ -881,7 +876,6 @@ margin-top: 160px;
     padding-left: 0;
   }
  
-
 
 #section-AboutUS {
   padding-bottom: 14vh !important;
