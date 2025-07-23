@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 196.1 196.1" style="enable-background:new 0 0 196.1 196.1;" xml:space="preserve">
+<style type="text/css">
+	._x005B_Default_x005D_{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.Drop_x0020_Shadow{fill:none;}
+	.Thick_x0020_Blue_x0020_Neon{fill:none;stroke:#0073BB;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;}
+	.Illuminating_x0020_Aqua{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:1;}
+	
+		.Black_x0020_Highlight{fill:url(#SVGID_00000163037399221844782940000015895342913260080002_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Bugaboo_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#FFDC00;}
+	.st0{fill:url(#SVGID_00000075149932042713443650000004362051253401296287_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:0.9799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:url(#SVGID_00000086677891535670331690000001068948979174309021_);}
+	.st4{fill:url(#SVGID_00000106864712635942081410000017025208144444526511_);}
+	.st5{fill:url(#SVGID_00000169530536998464149500000013549407066979416511_);}
+	.st6{fill:url(#SVGID_00000044173163351879924950000013804625994574375603_);}
+	.st7{fill:url(#SVGID_00000088812222150496067870000010903897254595829695_);}
+	.st8{fill:url(#SVGID_00000140009954344483908440000003702390324912983954_);}
+	.st9{fill:url(#SVGID_00000076565775837271715220000009568426279428381880_);}
+	.st10{fill:url(#SVGID_00000138554100032119405000000006014607098253107356_);}
+	.st11{fill:#30D5C8;}
+	.st12{fill:#009DE0;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="35.0002" y1="102.9788" x2="35.0002" y2="101.9788">
+	<stop  offset="0" style="stop-color:#1D59F3"/>
+	<stop  offset="0.618" style="stop-color:#2D65ED"/>
+	<stop  offset="0.6292" style="stop-color:#3864F2"/>
+	<stop  offset="0.9831" style="stop-color:#00DCFB"/>
+</linearGradient>
+<linearGradient id="SVGID_00000048465313242912060000000015265778651314112948_" gradientUnits="userSpaceOnUse" x1="35.0002" y1="102.9788" x2="35.0002" y2="101.9788">
+	<stop  offset="0" style="stop-color:#060606"/>
+	<stop  offset="0.618" style="stop-color:#000000"/>
+	<stop  offset="0.6292" style="stop-color:#000000"/>
+	<stop  offset="0.9831" style="stop-color:#000000"/>
+</linearGradient>
+<g id="BACKGROUND">
+</g>
+<g id="OBJECTS">
+	
+		<linearGradient id="SVGID_00000078005713439640665230000011279802827129388976_" gradientUnits="userSpaceOnUse" x1="28.7879" y1="92.2319" x2="167.2971" y2="92.2319">
+		<stop  offset="0" style="stop-color:#30D5C8"/>
+		<stop  offset="1" style="stop-color:#009DE0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000078005713439640665230000011279802827129388976_);" d="M28.8,95.6h37.8
+		c0.2,11.4,1.4,22.4,3.5,32.3c-8.9,2.3-17.2,5.6-24.4,9.8C35.8,126.3,29.6,111.6,28.8,95.6z M45.7,46.8c7.2,4.2,15.5,7.6,24.4,9.8
+		c-2.1,9.9-3.3,20.8-3.5,32.3H28.8C29.6,72.8,35.8,58.2,45.7,46.8z M167.3,88.9h-37.8c-0.2-11.4-1.4-22.4-3.5-32.3
+		c9-2.3,17.3-5.6,24.4-9.8C160.3,58.2,166.5,72.8,167.3,88.9z M73.3,88.9c0.2-11,1.3-21.5,3.3-30.8c6.9,1.3,14.2,2,21.4,2
+		c7.2,0,14.4-0.7,21.4-2.1c2,9.4,3.1,19.9,3.3,30.9H73.3z M122.8,95.6c-0.2,11-1.3,21.5-3.3,30.9c-7-1.3-14.2-2.1-21.4-2.1
+		c-7.3,0-14.5,0.7-21.4,2c-2-9.4-3.1-19.9-3.3-30.8H122.8z M124.4,50c-1-3.7-2.1-7.2-3.4-10.4c-2.4-6.3-5.2-11.4-8.4-15.2
+		c12.6,2.7,23.9,8.8,32.9,17.3C139.4,45.2,132.2,48,124.4,50z M114.8,42c1.1,2.9,2.2,6.1,3.1,9.4c-6.5,1.2-13.2,1.9-19.8,1.9
+		c-6.7,0-13.4-0.6-19.8-1.8c0.9-3.4,1.9-6.5,3.1-9.5C86,29.9,92.1,22.9,98,22.9S110.1,29.9,114.8,42z M75,39.6
+		c-1.3,3.3-2.4,6.8-3.4,10.5c-7.7-2-14.9-4.8-21.1-8.3c9-8.5,20.3-14.6,32.9-17.3C80.3,28.3,77.5,33.4,75,39.6z M71.7,134.4
+		c1,3.7,2.1,7.2,3.4,10.5c2.4,6.3,5.2,11.4,8.4,15.2c-12.6-2.7-23.9-8.8-32.9-17.3C56.8,139.1,64,136.3,71.7,134.4z M81.3,142.4
+		c-1.1-3-2.2-6.1-3.1-9.5c6.4-1.2,13.1-1.8,19.8-1.8c6.6,0,13.3,0.7,19.8,1.9c-0.9,3.3-1.9,6.5-3.1,9.4
+		c-4.7,12.2-10.8,19.2-16.8,19.2S86,154.6,81.3,142.4z M121.1,144.8c1.3-3.2,2.4-6.7,3.4-10.4c7.8,2,15,4.8,21.2,8.2
+		c-9,8.5-20.3,14.6-32.9,17.3C115.8,156.2,118.6,151.1,121.1,144.8z M126,127.9c2.1-9.9,3.3-20.9,3.5-32.3h37.8
+		c-0.8,16.1-7,30.7-16.9,42.1C143.3,133.5,134.9,130.2,126,127.9z"/>
+</g>
+</svg>

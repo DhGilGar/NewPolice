@@ -65,7 +65,7 @@
   html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* QUITA scroll horizontal */
+  overflow-x: hidden; 
 }
   
   body {
@@ -84,10 +84,10 @@ main {
   flex: 1;
 }
 
-  .video-background {
+.video-background {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -109,15 +109,27 @@ main {
  
   a {
     text-decoration: none;
-    color: #292D32;
     font-size: 16px !important; 
   }
 
-   a:hover{
-    text-decoration: none;
-    color: #30D5C8;  
-  }
-  
+a:hover {
+  text-decoration: none;
+  color: #30D5C8 !important; 
+}
+
+
+   .content a {
+  text-decoration: underline;
+  color: #30D5C8 !important; 
+}
+
+.content a:hover {
+  text-decoration: none;
+  text-decoration: underline;
+  color:#009DE0 !important;
+}
+
+
   p {
   font-family: "SF Pro Display", sans-serif;
   font-size: 16px !important; 
@@ -157,6 +169,16 @@ main {
     font-weight: bold; 
   }
 
+  #pcss-title {
+  font-weight: bold;
+  background: linear-gradient(90deg, #30D5C8, #009DE0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 200px !important;
+  margin: 0 auto;
+}
+
 .navbar-custom {
   background-color: #000000 !important;
   height: 60px;
@@ -183,15 +205,15 @@ main {
     text-decoration: none; 
 }
 .navbar-toggler {
-    border: none; /* Elimina el borde por defecto */
-    background-color: transparent; /* Fondo transparente */
+    border: none; 
+    background-color: transparent; 
     padding: 0.5rem 0.75rem;
     outline: none;
   }
   
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    /* Esto pone el ícono de hamburguesa en blanco */
+
   }  
   .navbar-toggler:focus,
   .navbar-toggler:active {
@@ -203,41 +225,119 @@ main {
   text-align: center;
   color: #707070;
   font-size: 16x;
-  margin: 8px 0; /* margen arriba y abajo */
+  margin: 8px 0; 
+}
+.linea-horizontal {
+    width: 100px; 
+    height: 4px; 
+    margin: 20px auto; 
+    background: linear-gradient(90deg, #30D5C8, #009DE0); /* Degradado horizontal */
+    border-radius: 2px;
 }
 
+
 #section-AboutUS {
+  padding: 5vh 10vw; 
+  text-align: center; 
+}
+
+#section-AboutUS .container-fluid {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#section-AboutUS .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+#section-AboutUS img.Police-Controller {
+  max-width: 50%; 
+  height: auto;
+  margin-bottom: 2rem; 
+}
+
+#section-AboutUS #container_about_us {
+  max-width: 800px;
+}
+
+#section-AboutUS h1 {
+  background: linear-gradient(90deg, #30D5C8, #009DE0); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+#section-AboutUS p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#section-AboutUS .button-container {
+  margin-top: 1.5rem;
+}
+
+
+
+.PCSS-card {
+    background-color: transparent; /* o usa #ffffff para blanco */
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%; /* Permite que los cuadros tengan altura completa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* distribuye icono y texto */
+}
+
+/* Icono dentro del cuadro */
+.PCSS-icon {
+    width: 140px; /* ajusta tamaño del icono */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Hacer que todos los cuadros tengan la misma altura */
+.row.text-center > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.text-center > div > div {
+    flex: 1; /* fuerza misma altura */
+}
+
+#section-Funcionalidades {
+  height: auto;
+  background: #fff;
+  width: 100%;
+
+}
+#section-Versiones {
   height: auto;
   background-color: #fff;
-  padding-bottom: 14vh !important;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  padding-top:5vh;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
-#section-Funcionalidades {
+
+#section-Versiones .container {
+margin-top: 160px;
+}
+#section-PCSS {
   height: auto;
   background: linear-gradient(to top, #292D32, #070808);
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
   width: 100%;
   margin-top: -80px;
-}
-#section-Productos {
-  height: auto;
-  background-color: #fff;
-  width: 100%;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 #section-Contacto {
-  display: flex;
-  flex-direction: column; 
-  height: auto; 
-  padding-bottom: 10vh ;
-}
-
-#contact_container{
-  background-color: #ffffff;
-  border-radius: 20px;
+  padding-bottom: 5vh ;
 }
 
 #contact_container .col-md-5 {
@@ -246,21 +346,55 @@ main {
   border-bottom-left-radius: 20px;
 }
 
+  .circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: -160px auto;
+  }
 
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #000 60%, #009DE0 100%);
+    box-shadow:
+      0 0 10px #30D5C8,
+      0 0 40px #30D5C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .circle-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .circle-text span:first-child {
+    font-size: 2.3rem;
+  }
+
+  .circle-text span:last-child {
+    font-size: 1.0rem;
+    margin-top: 6px;
+  }
 .img-fluid {
   border-radius: 20px;
 }
 
-.Police-Car {
-  width: 80%; 
-  border-radius: 20px;
-}
 
 
 
 .button-container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .solid-btn {
   display: flex;
@@ -280,7 +414,7 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .solid-btn:hover {
-  background-color: #e6f7ff;
+  background-color: #004E9D;
 }
 .arrow-icon {
   width: 50px;
@@ -294,37 +428,37 @@ main {
 }
 
 
-/* Contenedor del video */
+
 .video-container {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 80%;
 }
 
 
 .video-overlay-text {
   position: absolute;
-  top: 20%;
-  left: 17px;
-  width: 35%;
-  text-align: left;
-  padding-left: 20px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 40%; 
+  text-align: center;
   z-index: 15;
   color: white;
   pointer-events: none;
 }
-/* Animación general */
+
 .line {
   opacity: 0;
   transform: translateY(20px);
   animation: riseUp 0.6s ease-out forwards;
 }
 
-/* Animación línea por línea con delay */
+
 .line:nth-child(1) { animation-delay: 0.2s; }
 .line:nth-child(2) { animation-delay: 0.6s; }
 .line:nth-child(3) { animation-delay: 1s; }
-/* Añade más si tienes más líneas */
+
 
 @keyframes riseUp {
   to {
@@ -334,112 +468,61 @@ main {
 }
 
 
-.carousel-wrapper {
-  position: relative;  
-  width: 80%;
-  z-index: 10;
-  pointer-events: auto;
-  padding-left: 10px;
-  overflow: hidden;  
-  height: 55vh;
+.custom-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  bottom: 0;
-  margin-top: 3vh;
-}
-
-.carousel-slide {
-  display: none;
-  padding: 0px;
-  border-radius: 20px;
-  width: 100%;
-  height:65%; 
-  box-sizing: border-box;
-  transition: opacity 1s ease-in-out;
-  position: absolute;
-  left: 0;
-}
-
-.carousel-slide.active {
-  display: flex;     
-  opacity: 1;
-  position: relative; 
-}
-
-.carousel-content {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch; 
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;      
-  box-sizing: border-box;
-  margin: 70px 50px 0 0;
-}
-
-.carousel-text, .carousel-image {
-  flex: 1;
-  height: 100%;
+  align-items: center;
   padding: 20px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  background: linear-gradient(to right, rgba(0, 157, 224, 0.3), rgba(48, 213, 200, 0.3));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  margin-top: -25vh;
 }
 
-
-.carousel-text {
-  margin-right: 10px;
+.custom-section .row {
+  margin: 0 auto;
+  gap: 10px; /* Espacio entre columnas */
 }
 
-.carousel-text h4 {
-  color: #30D5C8;
+.custom-section .col-12,
+.custom-section .col-md-5 {
+  margin: 2px; /* Margen exterior de cada cuadro */
 }
 
-
-
-.carousel-image {
-  text-align: right;
-  margin-left: 10px;
+.custom-section .card {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  height: 350px ;
 }
 
-.carousel-image img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain; 
-  border-radius: 20px;
+.custom-section .card-body {
+  padding: 20px;
+  margin-bottom: 5px;
 }
 
-.carousel-arrow {
-  width: 40px; 
-  height: 40px;
-  cursor: pointer;
-  position: absolute;
- bottom: 0;
-  transform: translateY(-70%);
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: transparent; 
-  border: none; 
+.custom-section .card-title {
+  margin-bottom: 10px;
+     background: linear-gradient(to right, #009DE0, #30D5C8); /* Ejemplo de degradado rojo a amarillo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+  background-clip: text;
+  color: transparent;
 }
 
-
-.carousel-arrow.right {
-  right: 70px !important;
+.custom-section .card-text {
+  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 1rem;
 }
 
-
-.carousel-arrow img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  object-fit: contain;
+.custom-section .card-img-bottom {
+  margin-top: 10px;
+  height: 150px;
+  object-fit: cover;
 }
+
 
 
 
@@ -461,7 +544,7 @@ main {
 
   li {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 12px !important; 
+  font-size: 14px !important; 
   }
 
   h1 {
@@ -483,55 +566,75 @@ main {
   }
   h4 {
     font-family: "SF Pro Display", sans-serif;
-    font-size: 16px !important;  
+    font-size: 22px !important;  
     font-weight: bold; 
   }
 
   h5 {
     font-family: "SF Pro Display", sans-serif;
-    font-size: 12px !important;  
+    font-size: 16px !important;  
     font-weight: bold; 
   }
 
 .solid-btn {
-  width: 90px;
-  height: 70px;
-}
-
-.arrow-icon {
-  width: 30px;
-  height: 30px;
+  border-radius: 5px;
+  width: 120px;
+  height: 95px;
 }
 
   #section-Ourservices {
   margin-top: -40vh;
 }
+  #pcss-title {
+  font-weight: bold;
+  background: linear-gradient(90deg, #30D5C8, #009DE0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 150px !important;
+  margin: 0 auto;
+}
 
+.custom-section .card-body {
+  margin-bottom: 2px;
+}
 
-.carousel-wrapper {
+#section-Versiones {
+  height: auto;
+  background-color: #fff;
   width: 100%;
-  padding-left: 5px; 
-  margin-top: 4vh;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+  .circle-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: -160px auto;
+  }
+
+ 
+
+  .circle-text span:first-child {
+    font-size: 2rem;
+  }
+
+  .circle-text span:last-child {
+    font-size: 0.8rem;
+    margin-top: 6px;
+  }
+.img-fluid {
+  border-radius: 20px;
 }
 
-.carousel-text, .carousel-image {
-  padding: 10px;
-}
-
-.carousel-image {
-  margin-left: 5px;
-}
-
-
-.carousel-arrow {
-  transform: translateY(-40%);
-}
 
 
 }
 
 @media (min-width: 992px) {
-
+.custom-section .card {
+  height: 300px ;
+}
   .section4,
   .section5 {
     display: none;
@@ -569,6 +672,7 @@ main {
   }
 
 @media (max-width: 991.98px){
+
 
 .video-overlay-text {
   position: absolute;
@@ -625,7 +729,6 @@ main {
     height: 60px !important;
   }
 
-  
   .section4,
   .section5 {
     display: block !important;
@@ -676,21 +779,21 @@ main {
   .phone-nav-mobile {
   display: flex;
   align-items: center;
-  gap: 8px; /* espacio entre icono y texto */
+  gap: 8px; 
   }
 
-/* Estilo base de los links */
+
 .navbar-collapse.collapse.show .nav-link {
   color: #707070 !important;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   line-height: 1.4;
-  margin-left: 16px; /* margen izquierdo SOLO para los links */
+  margin-left: 16px; 
   display: inline-block;
   transition: color 0.3s ease;
 }
 
-/* Color al hacer hover */
+
 .navbar-collapse.collapse.show .nav-link:hover {
   color: #30D5C8 !important;
 }
@@ -714,7 +817,7 @@ main {
 .nav-divider {
   border: none;
   border-top: 1px solid #707070;
-  margin: 0;       /* sin márgenes ni padding a izquierda y derecha */
+  margin: 0;     
   padding: 0;
   width: 100%;
   box-sizing: border-box;
@@ -723,26 +826,23 @@ main {
 
 
 
-.carousel-wrapper {
-  width: 150%;
-  padding-left: 5px; 
-  margin-top: -10vh;
+
+.solid-btn {
+  border-radius: 5px;
+  width: 120px;
+  height: 95px;
 }
 
 
-.button-container {
-  margin-top: 4px;
-  margin-left: 0px;
+}
+
+@media (max-width: 1200px) {
+ 
+.custom-section .card {
+  height: 600px ;
 }
 
 }
-
-
-
-
-
-  
-  
 @media (max-width: 768px) {
  
     .video-overlay-text {
@@ -753,66 +853,11 @@ main {
     padding-left: 0;
   }
  
- 
- 
- 
- .carousel-wrapper {
-    width: 100%;
-    height: auto;
-    margin-top: 2vh;
-    padding: 0 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carousel-slide.active {
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
-  .carousel-content {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-  }
-
-  .carousel-text, .carousel-image {
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-  }
-
-  .carousel-image {
-    text-align: center;
-  }
-
-  .carousel-image img {
-    max-width: 80%;
-    max-height: 200px;
-    object-fit: contain;
-  }
-
-  .carousel-arrow {
-    bottom: 16px;
-    transform: translateY(0);
-  }
-
-  .carousel-arrow.right {
-    right: 20px !important;
-  }
-
-  .carousel-arrow.left {
-    left: 20px !important;
-  }
-
-#contact_container .col-md-5 {
-  background: linear-gradient(to right, #009DE0, #30D5C8); /* Degradado lineal */
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 20px;text-align: center;
+ {
+  height: 300px ;
 }
+
+
 
 #section-AboutUS {
   padding-bottom: 14vh !important;
@@ -820,14 +865,17 @@ main {
   padding-right: 5vh;
   padding-top:5vh;
 }
-.Police-Car {
-  width:100%; 
-  border-radius: 20px;
-  margin-top: 2vh;
-}
+
 #section-Funcionalidades {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 
+}
+@media (max-width: 400px) {
+.custom-section .card {
+  height: 400px ;
+  margin-top: 80px;
+
+}
 }
