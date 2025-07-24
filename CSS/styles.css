@@ -231,7 +231,7 @@ a:hover {
     width: 100px; 
     height: 4px; 
     margin: 20px auto; 
-    background: linear-gradient(90deg, #30D5C8, #009DE0); /* Degradado horizontal */
+    background: linear-gradient(90deg, #30D5C8, #009DE0); 
     border-radius: 2px;
 }
 
@@ -284,30 +284,30 @@ a:hover {
 
 
 .PCSS-card {
-    background-color: transparent; /* o usa #ffffff para blanco */
+    background-color: transparent; 
     border-radius: 5px;
     padding: 20px;
-    height: 100%; /* Permite que los cuadros tengan altura completa */
+    height: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* distribuye icono y texto */
+    justify-content: space-between;
 }
 
-/* Icono dentro del cuadro */
+
 .PCSS-icon {
-    width: 140px; /* ajusta tamaño del icono */
+    width: 140px;
     height: auto;
     margin-bottom: 15px;
 }
 
-/* Hacer que todos los cuadros tengan la misma altura */
+
 .row.text-center > div {
     display: flex;
     flex-direction: column;
 }
 
 .row.text-center > div > div {
-    flex: 1; /* fuerza misma altura */
+    flex: 1; 
 }
 
 #section-Funcionalidades {
@@ -352,7 +352,7 @@ margin-top: 160px;
 }
 
 #contact_container .col-md-5 {
-  background: linear-gradient(to right, #009DE0, #30D5C8); /* Degradado lineal */
+  background: linear-gradient(to right, #009DE0, #30D5C8);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -361,7 +361,7 @@ margin-top: 160px;
   position: relative;
   width: 300px;
   height: 300px;
-  margin: 20px auto 0 auto; /* top: 20px, horizontal: auto, bottom: 0 */
+  margin: 20px auto 0 auto; 
 }
 
   .circle {
@@ -512,8 +512,7 @@ margin-top: 160px;
 
 .custom-section .card-title {
   margin-bottom: 10px;
-     background: linear-gradient(to right, #009DE0, #30D5C8); /* Ejemplo de degradado rojo a amarillo */
-  -webkit-background-clip: text;
+     background: linear-gradient(to right, #009DE0, #30D5C8);
   -webkit-text-fill-color: transparent;
   
 
@@ -528,10 +527,10 @@ margin-top: 160px;
 }
 
 .card-img-bottom {
-  max-height: 120px; /* ajusta este valor según lo que quieras */
-  width: auto;       /* que mantenga la proporción */
-  object-fit: contain; /* para que no se distorsione */
-  margin-top: 5px;   /* espacio arriba si quieres */
+  max-height: 120px; 
+  width: auto;       
+  object-fit: contain; 
+  margin-top: 5px;  
 }
 
 
@@ -657,7 +656,7 @@ margin-top: 160px;
 
   .section2 {
     position: absolute;
-    right: 2rem; /* Ajusta el margen derecho según necesidad */
+    right: 2rem; 
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -875,17 +874,29 @@ margin-top: 160px;
     padding-left: 0;
   }
  
-
+.custom-section {
+  margin-top: -5vh;
+}
 #section-AboutUS {
-  padding-bottom: 14vh !important;
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-bottom: 1vh !important;
+  padding-left: 2vh;
+  padding-right: 2vh;
   padding-top:5vh;
 }
 
 #section-Funcionalidades {
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
+
+ a {
+
+    font-size: 13px !important; 
+  }
+
+p{
+
+    font-size: 13px !important; 
+  }
 
 }

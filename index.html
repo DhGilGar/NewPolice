@@ -6,8 +6,9 @@
     <title>Police Controller</title>
     <meta name="description" content="Programa para Policias. Programa para control policial.">
     <meta name="keywords" content="Policia, DSRC, FV">
-
-    <meta name="Police Controller" content="Kodea LTS">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Police Controller">
+    <meta name="Police Controller" content="Police Controller">
     <meta property="og:title" content="Police Controller - Software de control del transporte por carretera e inspecciones a empresas">
     <meta property="og:description" content="Police Controller ha sido diseñado por un grupo multi disciplinar formado por expertos desarrolladores matemáticos y juristas haciendo el software líder en su sector.
 
@@ -15,7 +16,7 @@ La constante evolución y mejora de nuestro software nos permite dar solución a
 
 Nuestras soluciones están presentes en cuerpos de policías y administraciones de toda Europa.">
     <meta property="og:image" content="images/Police_image.png">
-    <meta property="og:url" content="http://policecontroller.eu/">
+    <meta property="og:url" content="https://policecontroller.eu/images/SymbolGuretruck.png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
@@ -403,7 +404,7 @@ Nuestras soluciones están presentes en cuerpos de policías y administraciones 
          
 
 
-<div class="col-12 p-3 p-md-5 text-center" id="section-Contacto">
+<div class="col-12 p-3 p-md-5 text-start text-md-center" id="section-Contacto">
   
   <h1 style=" background: linear-gradient(90deg, #30D5C8, #009DE0); 
                      -webkit-background-clip: text;
@@ -465,6 +466,22 @@ Nuestras soluciones están presentes en cuerpos de policías y administraciones 
     
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
 
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth < 992) { 
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
